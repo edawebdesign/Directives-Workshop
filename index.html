@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="directiveWorkshop">
 <head>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<title>My Directives</title>
 </head>
 <body ng-controller="mainCtrl">
@@ -9,7 +10,7 @@
 <h2>pending</h2>
 	<form>
 		<input ng-model="query" placeholder="Search"/>
-		<button ng-click="getData()">Submit</button> 
+		<button pending-dir request="getData()">Submit</button> 
 	</form>
 </div>
 
@@ -19,7 +20,7 @@
 		<input ng-model="title" placeholder="title"/>
 		<input ng-model="body" placeholder="body"/>
 		<input ng-model="icon" placeholder="iconUrl"/>
-		<button ng-click="">Submit</button> 
+		<button notify title='title' body = 'body' icon = 'icon'>Submit</button> 
 	</form>
 </div>
 
